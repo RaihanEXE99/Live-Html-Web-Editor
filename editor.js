@@ -8,9 +8,7 @@ var editor = ace.edit("coder");
         $("#status p").delay(500).fadeOut(200);
         
         var code = editor.getValue();
-        
         var iframe = document.createElement('iframe');
-        
         var preview = document.getElementById('preview');
         var content = '<!doctype html>' + code;
     
