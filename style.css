@@ -1,0 +1,69 @@
+*{
+    margin:0;padding:0;box-sizing:border-box;
+}
+.hard__font{
+    font-family: 'Roboto', sans-serif;
+}
+body,html{
+    height:100%;
+}
+
+#wrap{
+    height:100%;
+    position:relative;
+    background:white;
+}
+
+#coder{ 
+    display:block;
+    position:relative;
+    width:100%;
+    height:65%;
+}
+#preview{
+    display:block;
+    position:relative;
+    width:100%;
+    height:100%;
+    background:#fff;
+}
+    #preview iframe{
+        width:100%;
+        height:100%;
+        border:none;
+    }
+#status{
+    padding:25px 0;
+    height:50px;
+}
+.spanD {
+    color: whitesmoke;
+    font: 700 2em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    /* Clip Background Image */
+    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Animate Background Image */
+    -webkit-animation: aitf 80s linear infinite;
+    /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+    0% {
+    background-position: 0% 50%;
+    }
+    100% {
+    background-position: 100% 50%;
+    }
+}
+.mis{
+    font-size: 1rem;
+    color: tomato;
+}

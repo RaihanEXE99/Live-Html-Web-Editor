@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Html Code Editor</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div id="wrap">
+        <div class="bg-gray-900">
+            <span class="spanD ">
+                HTML EDITOR <a class="mis" href="https://github.com/RaihanEXE99">👉RaihanEXE99</a>
+            </span>
+        </div>
+            
+            
+        <div style="font-size: 1.5vw;" id="coder">&lt;style&gt; 
+    * { 
+        font-family: sans-serif; 
+        color: rgba(0,0,0,0.75); 
+    } 
+    body { 
+        /*background: #fafafa;*/ 
+        background: rgb(63, 61, 86); 
+        height: 100vh; 
+        padding: 0px 30px; 
+        margin: 0; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+    } 
+    .lp { 
+        background: #fff; 
+        box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.4); 
+        border-radius: 8px; 
+        max-width: 680px; 
+        height: 400px; 
+        margin: auto; 
+        padding: 32px 32px 8px 32px; 
+        overflow: hidden; 
+    } 
+    .lp__body { 
+        display: flex; 
+    } 
+    /*NAV*/ 
+    .lp__nav { 
+        width: max-content; 
+        display: flex; 
+        align-items: center; 
+    } .lp__nav__logo { 
+        width: 20px; 
+        margin: -1px 0 0; 
+        padding: 0 4px 0 0; 
+    } .lp__nav__text { 
+        font-weight: 600; 
+        font-size: 18px; 
+    } 
+    /*MAIN TEXT*/ 
+    .lp__text { 
+        min-width: 200px; 
+        padding: 0 0 25px; 
+        align-self: flex-end; 
+    } 
+    .lp__text__title { 
+        font-size: 32px; 
+        text-decoration: 
+        underline; margin: 0; 
+    } 
+    .lp__text__title-first { 
+        display: block; 
+    } 
+    .lp__text__subtext { 
+        color: #aaa; 
+        font-size: 12px; 
+        line-height: 1.75; 
+        margin: 16px 0; 
+    } 
+    /*MAIN IMAGE*/ 
+    .lp__mainImg { } 
+    .lp__mainImg__img { 
+        width: 100%; 
+        height: 410px; 
+        margin: -70px 40px 0; 
+    } 
+&lt;/style&gt; 
+        
+&lt;main&gt; 
+&lt;div class=&quot;lp&quot;&gt; 
+    &lt;!--- START: NAV ---&gt; 
+    &lt;nav class=&quot;lp__nav&quot;&gt; 
+    &lt;img 
+    src=&quot;https://cdn.pixabay.com/photo/2016/12/19/03/14/computer-1917230__480.png&quot; 
+    class=&quot;lp__nav__logo&quot;&gt; 
+    &lt;p class=&quot;lp__nav__text&quot;&gt;Studio.&lt;/p&gt; 
+    &lt;/nav&gt; 
+    &lt;!--- END: NAV ---&gt; 
+    &lt;section class=&quot;lp__body&quot;&gt; 
+    &lt;!--- START: TEXT ---&gt; 
+    &lt;div class=&quot;lp__text&quot;&gt; 
+    &lt;h1 class=&quot;lp__text__title&quot;&gt;&lt;span class=&quot;lp__text__title-first&quot;&gt;Invite&lt;/span&gt; Designers&lt;/h1&gt; 
+    &lt;p class=&quot;lp__text__subtext&quot;&gt;Invite designers below who want to share their work on Dribble.&lt;/p&gt; 
+    &lt;/div&gt; 
+    &lt;!--- END: TEXT ---&gt; 
+    &lt;!--- START: IMG ---&gt; 
+    &lt;div class=&quot;lp__mainImg&quot;&gt; 
+    &lt;img 
+    src=&quot;https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/experience_design_eq3j.svg&quot; 
+    class=&quot;lp__mainImg__img&quot;&gt; 
+    &lt;/div&gt; 
+    &lt;!--- END: IMG ---&gt; 
+    &lt;/section&gt; 
+&lt;/div&gt; 
+&lt;/main&gt;</div>
+        
+        <div onclick="scrollWin()" class="cursor-pointer bg-gray-600 flex justify-center">
+            <p class="text-2xl font-bold italic text-white py-4">↓ Live Preview ↓ Scroll Down ↓</p> 
+        </div>
+
+        <div id="preview"></div>
+        
+    </div>
+
+    <script src="scroll-canvas.js"></script>
+    <script src="editor.js"></script>
+</body>
+</html>
